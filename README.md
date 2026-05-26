@@ -101,15 +101,6 @@ https://codeforces.com/group/<groupCode>/contest/<contestId>/problem/<index>
 
 ---
 
-## Roadmap
-
-- [ ] Add a screenshot / GIF demo
-- [ ] Improve layout support for more Codeforces page variants
-- [ ] Add a build and release workflow
-- [ ] Publish to the Chrome Web Store
-
----
-
 ## Contributing
 
 Issues and PRs are welcome. If you find a URL pattern that isn't handled or a layout that breaks the widget, open an issue with the full URL.
