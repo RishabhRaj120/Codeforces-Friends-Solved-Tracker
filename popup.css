@@ -1,0 +1,158 @@
+body {
+  min-width: 340px;
+  margin: 0;
+  background: #f4f6f8;
+  color: #1f2937;
+  font: 13px/1.45 Arial, sans-serif;
+}
+
+button,
+input,
+textarea {
+  font: inherit;
+}
+
+.popup {
+  padding: 14px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+h1 {
+  margin: 0;
+  color: #163a66;
+  font-size: 18px;
+  line-height: 1.1;
+}
+
+p {
+  margin: 3px 0 0;
+}
+
+.header p,
+.hint,
+.status {
+  color: #5b6472;
+  font-size: 12px;
+}
+
+.section {
+  padding: 12px;
+  margin-bottom: 10px;
+  border: 1px solid #d7e0ec;
+  border-radius: 7px;
+  background: #fff;
+}
+
+.check-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  margin: 0 0 9px;
+  color: #263545;
+}
+
+.check-row:last-child {
+  margin-bottom: 0;
+}
+
+.label {
+  display: block;
+  margin: 9px 0 5px;
+  color: #334155;
+  font-weight: 700;
+}
+
+.label:first-child {
+  margin-top: 0;
+}
+
+textarea,
+input[type="text"],
+input[type="password"],
+input[type="number"] {
+  width: 100%;
+  min-height: 34px;
+  padding: 7px 8px;
+  border: 1px solid #b9c8d9;
+  border-radius: 5px;
+  background: #fbfdff;
+  color: #111827;
+  box-sizing: border-box;
+}
+
+textarea {
+  min-height: 98px;
+  resize: vertical;
+}
+
+.inline-fields {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 90px;
+  align-items: end;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.inline-fields .label {
+  margin: 0;
+}
+
+.primary-button,
+.small-button {
+  appearance: none;
+  border: 1px solid #2d6ca2;
+  border-radius: 5px;
+  background: #2f75b5;
+  color: #fff;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.primary-button {
+  width: 100%;
+  min-height: 34px;
+  margin-top: 10px;
+}
+
+.small-button {
+  min-width: 86px;
+  min-height: 30px;
+  padding: 4px 9px;
+  font-size: 12px;
+}
+
+.primary-button:hover,
+.small-button:hover {
+  background: #28679f;
+}
+
+.primary-button:disabled,
+.small-button:disabled {
+  cursor: default;
+  opacity: 0.58;
+}
+
+summary {
+  color: #163a66;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.status {
+  min-height: 17px;
+}
+
+.status[data-tone="good"] {
+  color: #176a3a;
+}
+
+.status[data-tone="bad"] {
+  color: #a12323;
+}

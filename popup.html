@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Codeforces Friend Solves</title>
+    <link rel="stylesheet" href="popup.css">
+  </head>
+  <body>
+    <main class="popup">
+      <header class="header">
+        <div>
+          <h1>Friend Solves</h1>
+          <p>Codeforces problem helper</p>
+        </div>
+        <button id="refreshActive" type="button" class="small-button">Refresh tab</button>
+      </header>
+
+      <section class="section">
+        <label class="check-row">
+          <input id="autoCheck" type="checkbox">
+          <span>Check problem pages automatically</span>
+        </label>
+        <label class="check-row">
+          <input id="useCodeforcesFriends" type="checkbox">
+          <span>Use my Codeforces friends filter first</span>
+        </label>
+        <label class="check-row">
+          <input id="manualFallback" type="checkbox">
+          <span>Also scan saved handles when needed</span>
+        </label>
+      </section>
+
+      <section class="section">
+        <label for="friendHandles" class="label">Saved handles</label>
+        <textarea id="friendHandles" spellcheck="false" placeholder="tourist&#10;Benq&#10;Petr"></textarea>
+        <div class="inline-fields">
+          <label for="scanCount" class="label">Submissions per handle</label>
+          <input id="scanCount" type="number" min="1" max="500" step="1">
+        </div>
+        <button id="saveSettings" type="button" class="primary-button">Save settings</button>
+        <p id="saveStatus" class="status" aria-live="polite"></p>
+      </section>
+
+      <section class="section">
+        <details>
+          <summary>Import Codeforces friends with API key</summary>
+          <p class="hint">Generated on your Codeforces API settings page. The secret is only used locally.</p>
+          <label for="apiKey" class="label">API key</label>
+          <input id="apiKey" type="text" autocomplete="off">
+          <label for="apiSecret" class="label">API secret</label>
+          <input id="apiSecret" type="password" autocomplete="off">
+          <label class="check-row">
+            <input id="rememberApi" type="checkbox">
+            <span>Remember key and secret on this browser</span>
+          </label>
+          <button id="importFriends" type="button" class="primary-button">Import friends</button>
+          <p id="apiStatus" class="status" aria-live="polite"></p>
+        </details>
+      </section>
+    </main>
+    <script src="popup.js"></script>
+  </body>
+</html>

@@ -1,0 +1,121 @@
+.cf-friend-solves-panel {
+  box-sizing: border-box;
+  width: 100%;
+  margin: 0 0 10px;
+  padding: 0;
+  border: 1px solid #b7c1cd;
+  border-left: 3px solid #4f8a5b;
+  border-radius: 5px;
+  background: #fbfcfd;
+  color: #222;
+  font: 12px/1.35 Verdana, Arial, sans-serif;
+  overflow: hidden;
+}
+
+.cf-friend-solves-panel * {
+  box-sizing: border-box;
+}
+
+.cf-friend-solves-header {
+  display: grid;
+  grid-template-columns: 25px minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 7px;
+  padding: 7px 8px;
+  border-bottom: 1px solid #d8dee6;
+  background: #f1f4f7;
+}
+
+.cf-friend-solves-mark {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 25px;
+  height: 25px;
+  border: 1px solid #3f7f4d;
+  border-radius: 4px;
+  background: #4f8a5b;
+  color: #fff;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0;
+}
+
+.cf-friend-solves-title {
+  color: #24364d;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1.15;
+}
+
+.cf-friend-solves-subtitle {
+  margin-top: 1px;
+  color: #687385;
+  font-size: 10px;
+  line-height: 1.2;
+}
+
+.cf-friend-solves-body {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 7px;
+  padding: 7px 8px 8px;
+}
+
+.cf-friend-solves-status {
+  min-height: 16px;
+  color: #4d5663;
+  overflow-wrap: anywhere;
+}
+
+.cf-friend-solves-status[data-tone="good"] {
+  color: #27733a;
+}
+
+.cf-friend-solves-status[data-tone="warn"] {
+  color: #8a5a12;
+}
+
+.cf-friend-solves-status[data-tone="bad"] {
+  color: #a12b2b;
+}
+
+.cf-friend-solves-footer {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.cf-friend-solves-button,
+.cf-friend-solves-link-button {
+  appearance: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 25px;
+  padding: 3px 8px;
+  border: 1px solid #a7b4c2;
+  border-radius: 4px;
+  background: linear-gradient(#ffffff, #edf1f5);
+  color: #244466;
+  font: 700 11px/1.2 Verdana, Arial, sans-serif;
+  text-decoration: none;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.cf-friend-solves-link-button {
+  width: 100%;
+}
+
+.cf-friend-solves-button:hover,
+.cf-friend-solves-link-button:hover {
+  border-color: #71869b;
+  background: linear-gradient(#ffffff, #e3eaf0);
+  color: #183652;
+  text-decoration: none;
+}
+
+.cf-friend-solves-button:disabled {
+  cursor: default;
+  opacity: 0.58;
+}

@@ -1,0 +1,33 @@
+{
+  "manifest_version": 3,
+  "name": "Codeforces Friend Solves",
+  "version": "0.1.0",
+  "description": "Shows which Codeforces friends solved the current problem and links to their accepted submissions.",
+  "permissions": [
+    "storage",
+    "activeTab"
+  ],
+  "host_permissions": [
+    "https://codeforces.com/*",
+    "https://mirror.codeforces.com/*"
+  ],
+  "action": {
+    "default_title": "Codeforces Friend Solves",
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://codeforces.com/*",
+        "https://mirror.codeforces.com/*"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "css": [
+        "content.css"
+      ],
+      "run_at": "document_idle"
+    }
+  ]
+}
